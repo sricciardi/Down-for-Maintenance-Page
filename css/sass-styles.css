@@ -1,0 +1,199 @@
+/* Scss Document */
+body {
+  background-color: #0079C4; }
+
+img {
+  max-width: 299.75px; }
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.stackedType {
+  justify-content: center;
+  z-index: 2;
+  display: flex;
+  align-items: center !important; }
+
+.animation {
+  justify-content: center;
+  z-index: 1;
+  display: flex;
+  align-items: center !important; }
+
+.one .fa {
+  color: #91DCFF; }
+
+.two .fa {
+  color: #60B0FF; }
+
+.three .fa {
+  color: white; }
+
+img {
+  max-width: 299.75px; }
+
+.stackedType {
+  margin-top: 40px; }
+
+.one {
+  width: 67.5px;
+  height: 67.5px;
+  margin-top: -39.825px;
+  margin-right: -74.925px; }
+
+.two {
+  width: 99.9px;
+  height: 99.9px;
+  margin-top: -4.995px;
+  margin-left: 57.942px; }
+
+.three {
+  width: 77.625px;
+  height: 77.625px;
+  margin-top: -14.981625px;
+  margin-left: -20.02725px; }
+
+.one .fa {
+  font-size: 67.5px !important; }
+
+.two .fa {
+  font-size: 99.9px !important; }
+
+.three .fa {
+  font-size: 77.625px !important; }
+
+@media (max-width: 1199px) {
+  img {
+    max-width: 299.75px; }
+
+  .stackedType {
+    margin-top: 40px; }
+
+  .one {
+    width: 67.5px;
+    height: 67.5px;
+    margin-top: -39.825px;
+    margin-right: -74.925px; }
+
+  .two {
+    width: 99.9px;
+    height: 99.9px;
+    margin-top: -4.995px;
+    margin-left: 57.942px; }
+
+  .three {
+    width: 77.625px;
+    height: 77.625px;
+    margin-top: -14.981625px;
+    margin-left: -20.02725px; }
+
+  .one .fa {
+    font-size: 67.5px !important; }
+
+  .two .fa {
+    font-size: 99.9px !important; }
+
+  .three .fa {
+    font-size: 77.625px !important; } }
+@media (max-width: 991px) {
+  img {
+    max-width: 247.75px; }
+
+  .stackedType {
+    margin-top: 30px; }
+
+  .one {
+    width: 62.775px;
+    height: 62.775px;
+    margin-top: -37.03725px;
+    margin-right: -69.68025px; }
+
+  .two {
+    width: 92.907px;
+    height: 92.907px;
+    margin-top: -4.64535px;
+    margin-left: 53.88606px; }
+
+  .three {
+    width: 72.19125px;
+    height: 72.19125px;
+    margin-top: -13.93291125px;
+    margin-left: -18.6253425px; }
+
+  .one .fa {
+    font-size: 62.775px !important; }
+
+  .two .fa {
+    font-size: 92.907px !important; }
+
+  .three .fa {
+    font-size: 72.19125px !important; } }
+@media (max-width: 768px) {
+  img {
+    max-width: 192px; }
+
+  .stackedType {
+    margin-top: 20px; }
+
+  .one {
+    width: 54.675px;
+    height: 54.675px;
+    margin-top: -32.25825px;
+    margin-right: -60.68925px; }
+
+  .two {
+    width: 80.919px;
+    height: 80.919px;
+    margin-top: -4.04595px;
+    margin-left: 46.93302px; }
+
+  .three {
+    width: 62.87625px;
+    height: 62.87625px;
+    margin-top: -12.13511625px;
+    margin-left: -16.2220725px; }
+
+  .one .fa {
+    font-size: 54.675px !important; }
+
+  .two .fa {
+    font-size: 80.919px !important; }
+
+  .three .fa {
+    font-size: 62.87625px !important; } }
+@media (max-width: 575px) {
+  img {
+    max-width: 143.75px; }
+
+  .stackedType {
+    margin-top: 10px; }
+
+  .one {
+    width: 45.225px;
+    height: 45.225px;
+    margin-top: -26.68275px;
+    margin-right: -50.19975px; }
+
+  .two {
+    width: 66.933px;
+    height: 66.933px;
+    margin-top: -3.34665px;
+    margin-left: 38.82114px; }
+
+  .three {
+    width: 52.00875px;
+    height: 52.00875px;
+    margin-top: -10.03768875px;
+    margin-left: -13.4182575px; }
+
+  .one .fa {
+    font-size: 45.225px !important; }
+
+  .two .fa {
+    font-size: 66.933px !important; }
+
+  .three .fa {
+    font-size: 52.00875px !important; } }

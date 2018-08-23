@@ -52,11 +52,11 @@ img {
 	margin-left: 10px;
 }
 .one .fa {
-	color: white;
+	color: #91DCFF;
 	font-size: 135px !important;
 }
 .two .fa {
-	color: #4AD438;
+	color: #60B0FF;
 	font-size: 200px !important;
 }
 .three .fa {
@@ -91,15 +91,15 @@ img {
 	margin-left: 10px;
 }
 .one .fa {
-	color: white;
+	/*color: white;*/
 	font-size: 135px !important;
 }
 .two .fa {
-	color: #4AD438;
+	/*color: #4AD438;*/
 	font-size: 200px !important;
 }
 .three .fa {
-	color: white;
+	/*color: white;*/
 	font-size: 155px !important;
 }
 }
@@ -130,15 +130,15 @@ img {
 	margin-left: 10px;
 }
 .one .fa {
-	color: white;
+	/*color: white;*/
 	font-size: 125px !important;
 }
 .two .fa {
-	color: #4AD438;
+	/*color: #4AD438;*/
 	font-size: 190px !important;
 }
 .three .fa {
-	color: white;
+	/*color: white;*/
 	font-size: 155px !important;
 }
 }
@@ -169,15 +169,15 @@ img {
 	margin-left: -10px;
 }
 .one .fa {
-	color: white;
+	/*color: white;*/
 	font-size: 110px !important;
 }
 .two .fa {
-	color: #4AD438;
+	/*color: #4AD438;*/
 	font-size: 160px !important;
 }
 .three .fa {
-	color: white;
+	/*color: white;*/
 	font-size: 140px !important;
 }
 }
@@ -208,15 +208,15 @@ img {
 	margin-left: 0px;
 }
 .one .fa {
-	color: white;
+	/*color: white;*/
 	font-size: 90px !important;
 }
 .two .fa {
-	color: #4AD438;
+	/*color: #4AD438;*/
 	font-size: 120px !important;
 }
 .three .fa {
-	color: white;
+	/*color: white;*/
 	font-size: 100px !important;
 }
 }

@@ -1,0 +1,163 @@
+/* Scss Document */
+// **********************************************************************
+// Rewrote my CSS in SASS because it is much easier to modify if there are
+// any size changes needed for the contents of the page.
+// **********************************************************************
+
+// Main page colors
+$blue-color: #0079C4;
+$blue-color50: #60B0FF;
+$blue-color25: #91DCFF;
+
+// Gear colors
+$gear-one-color: $blue-color25;
+$gear-two-color: $blue-color50;
+$gear-three-color: white;
+
+// Size Variables
+$lg-media-size: 1199px;
+$md-media-size: 991px;
+$sm-media-size: 768px;
+$xs-media-size: 575px;
+
+// Master Scaling
+$master-gear-size-scale: .5;
+$master-image-default-scale: .25;
+$master-type-top-margin-scale: 1;
+
+// Master Gear Size
+$master-gear-size: 135px * $master-gear-size-scale;
+$md-master-gear-scale: .93;
+$sm-master-gear-scale: .81;
+$xs-master-gear-scale: .67;
+
+// Master Type Top Margin Sizes
+$master-type-top-margin: 40px * $master-type-top-margin-scale;
+$lg-type-top-margin-scale: 1;
+$md-type-top-margin-scale: .75;
+$sm-type-top-margin-scale: .5;
+$xs-type-top-margin-scale: .25;
+
+// **********************************************************************
+// ******************* DONT MODIFY BELOW THIS LINE **********************
+// **********************************************************************
+
+// Type Top Margins for each Media Query
+$lg-type-top-margin: $master-type-top-margin * $lg-type-top-margin-scale;
+$md-type-top-margin: $master-type-top-margin * $md-type-top-margin-scale;
+$sm-type-top-margin: $master-type-top-margin * $sm-type-top-margin-scale;
+$xs-type-top-margin: $master-type-top-margin * $xs-type-top-margin-scale;
+
+// Image sizes for each Media Query
+$lg-img-size: $lg-media-size * $master-image-default-scale;
+$md-img-size: $md-media-size * $master-image-default-scale;
+$sm-img-size: $sm-media-size * $master-image-default-scale;
+$xs-img-size: $xs-media-size * $master-image-default-scale;
+
+// Gear Sizes
+$gear-one-size: $master-gear-size * 1;
+$gear-two-size: $master-gear-size * 1.48;
+$gear-three-size: $master-gear-size * 1.15;
+
+$md-gear-one-size: $gear-one-size * $md-master-gear-scale;
+$md-gear-two-size: $gear-two-size * $md-master-gear-scale;
+$md-gear-three-size: $gear-three-size * $md-master-gear-scale;
+
+$sm-gear-one-size: $gear-one-size * $sm-master-gear-scale;
+$sm-gear-two-size: $gear-two-size * $sm-master-gear-scale;
+$sm-gear-three-size: $gear-three-size * $sm-master-gear-scale;
+
+$xs-gear-one-size: $gear-one-size * $xs-master-gear-scale;
+$xs-gear-two-size: $gear-two-size * $xs-master-gear-scale;
+$xs-gear-three-size: $gear-three-size * $xs-master-gear-scale;
+
+$main-background-color: $blue-color;
+
+body {
+	background-color: $main-background-color;
+	}
+
+img {
+	max-width: $lg-img-size;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.stackedType {
+	justify-content: center;
+	z-index: 2;
+	display: flex;
+	align-items: center !important;
+}
+
+.animation {
+	justify-content: center;
+	z-index: 1;
+	display: flex;
+	align-items: center !important;
+}
+.one .fa {
+	color: $gear-one-color;
+}
+.two .fa {
+	color: $gear-two-color;
+}
+.three .fa {
+	color: $gear-three-color;
+}
+
+@mixin media-master($mix-img-size,$mix-type-top-margin,$mix-gear-one-size,$mix-gear-two-size,$mix-gear-three-size){
+img {
+	max-width: $mix-img-size;
+}
+.stackedType {
+		margin-top: $mix-type-top-margin;
+}
+.one {
+	width: $mix-gear-one-size;
+	height: $mix-gear-one-size;
+	margin-top: -($mix-gear-one-size * .59);
+	margin-right: -($mix-gear-one-size * 1.11);
+}
+.two {
+	width: $mix-gear-two-size;
+	height: $mix-gear-two-size;
+	margin-top: -($mix-gear-two-size * .05);
+	margin-left: $mix-gear-two-size * .58;
+}
+.three {
+	width: $mix-gear-three-size;
+	height: $mix-gear-three-size;
+	margin-top: -($mix-gear-three-size * .193);
+	margin-left: -($mix-gear-three-size * .258);
+}
+.one .fa {
+	font-size: $mix-gear-one-size !important;
+}
+.two .fa {
+	font-size: $mix-gear-two-size !important;
+}
+.three .fa {
+	font-size: $mix-gear-three-size !important;
+}
+}
+
+@include media-master($lg-img-size,$lg-type-top-margin,$gear-one-size,$gear-two-size,$gear-three-size);
+
+@media (max-width: $lg-media-size){
+@include media-master($lg-img-size,$lg-type-top-margin,$gear-one-size,$gear-two-size,$gear-three-size);
+}
+@media (max-width: $md-media-size){
+@include media-master($md-img-size,$md-type-top-margin,$md-gear-one-size,$md-gear-two-size,$md-gear-three-size);
+}
+@media (max-width: $sm-media-size){
+@include media-master($sm-img-size,$sm-type-top-margin,$sm-gear-one-size,$sm-gear-two-size,$sm-gear-three-size);
+}
+@media (max-width: $xs-media-size){
+@include media-master($xs-img-size,$xs-type-top-margin,$xs-gear-one-size,$xs-gear-two-size,$xs-gear-three-size);
+}
