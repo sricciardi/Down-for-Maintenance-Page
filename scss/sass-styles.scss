@@ -32,7 +32,7 @@ $sm-master-gear-scale: .81;
 $xs-master-gear-scale: .67;
 
 // Master Type Top Margin Sizes
-$master-type-top-margin: 40px * $master-type-top-margin-scale;
+$master-type-top-margin: 10px * $master-type-top-margin-scale;
 $lg-type-top-margin-scale: 1;
 $md-type-top-margin-scale: .75;
 $sm-type-top-margin-scale: .5;
@@ -101,6 +101,11 @@ img {
 	display: flex;
 	align-items: center !important;
 }
+
+.bottom-margin {
+	height: 300px;
+}
+
 .one .fa {
 	color: $gear-one-color;
 }
