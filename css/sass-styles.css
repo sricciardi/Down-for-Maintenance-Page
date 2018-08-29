@@ -12,6 +12,11 @@ img {
   justify-content: center; }
 
 .stackedType {
+  border-radius: 5px;
+  border-width: thin !important;
+  border: solid #80C9F7;
+  background-color: #ECF5FD;
+  padding: 10px;
   justify-content: center;
   z-index: 2;
   display: flex;
@@ -27,10 +32,10 @@ img {
   height: 300px; }
 
 .one .fa {
-  color: #91DCFF; }
+  color: #CCE9FC; }
 
 .two .fa {
-  color: #60B0FF; }
+  color: #80C9F7; }
 
 .three .fa {
   color: white; }

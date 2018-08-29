@@ -6,8 +6,9 @@
 
 // Main page colors
 $blue-color: #0079C4;
-$blue-color50: #60B0FF;
-$blue-color25: #91DCFF;
+$blue-color50: #80C9F7;
+$blue-color25: #CCE9FC;
+$blue-color10: #ECF5FD;
 
 // Gear colors
 $gear-one-color: $blue-color25;
@@ -89,6 +90,11 @@ img {
 }
 
 .stackedType {
+	border-radius: 5px;
+	border-width: thin !important;
+	border:solid #80C9F7;
+	background-color: #ECF5FD;
+	padding: 10px;
 	justify-content: center;
 	z-index: 2;
 	display: flex;
